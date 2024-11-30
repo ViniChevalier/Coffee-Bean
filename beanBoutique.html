@@ -1,0 +1,93 @@
+<!--
+*CA 2
+*@Vinícius Araújo
+*25/11/24
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Coffee & Bean - Bean Boutique</title>
+	<link rel="stylesheet" href="assets/css/external.css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<h1>Bean Boutique</h1>
+		</div>
+
+		<!-- Navigation -->
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="ourGrains.html">Our Grains</a></li>
+				<li><a href="beanBoutique.html">Bean Boutique</a></li>
+				<li><a href="right-sidebar.html">Right Sidebar</a></li>
+				<li><a href="no-sidebar.html">No Sidebar</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Main Content -->
+	<main class="wrapper style1">
+		<div class="container">
+			<article id="main" class="special">
+				<header>
+					<p>Discover our extensive range of premium coffee products, available at our stores throughout
+						Dublin.</p>
+				</header>
+
+				<!-- Coffee Products Section -->
+				<section id="coffeeApp">
+					<div class="row">
+						<article v-for="(product, index) in products" :key="index"
+							class="col-4 col-12-mobile product-card">
+							<a href="#" class="image featured">
+								<img :src="product.image" :alt="product.name" />
+							</a>
+							<header>
+								<h3><a href="#">{{ product.name }}</a></h3>
+								<p class="price">€{{ product.price }}</p>
+							</header>
+							<p>{{ product.description }}</p>
+						</article>
+					</div>
+				</section>
+			</article>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="col-12">
+			<section class="contact">
+				<header>
+					<h3>Want to connect?</h3>
+				</header>
+				<p>Get in touch with us through our social channels.</p>
+				<ul class="icons">
+					<li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span
+								class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span
+								class="label">Instagram</span></a></li>
+				</ul>
+			</section>
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; Coffee & Bean. All rights reserved.</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script> <!-- Framework used to create dynamic components easily -->
+	<script src="JS/coffeeSell.js"></script> <!-- Script to insert plant data -->
+</body>
+
+</html>
