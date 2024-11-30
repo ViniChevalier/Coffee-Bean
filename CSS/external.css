@@ -106,6 +106,15 @@ section, summary, time, mark, audio, video {
 			right: -1px;
 		}
 
+		.ourGrowers {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.grower {
+			margin-bottom: 30px;
+		}
+
 /* Container */
 
 	.container {
