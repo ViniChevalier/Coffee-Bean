@@ -791,7 +791,6 @@ section, summary, time, mark, audio, video {
 		display: none;
 	}
 
-
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
@@ -1446,3 +1445,99 @@ section, summary, time, mark, audio, video {
 					}
 
 	}
+
+	@media screen and (max-width: 1280px) {
+
+		/* Basic */
+
+			body, input, textarea, select {
+				font-size: 12pt;
+				line-height: 1.5em;
+			}
+
+		/* Wrapper */
+
+			.wrapper {
+				padding-left: 2em;
+				padding-right: 2em;
+			}
+
+		/* Header */
+
+			#header {
+				background-attachment: scroll;
+			}
+
+				#header .inner {
+					padding-left: 2em;
+					padding-right: 2em;
+				}
+
+		/* Banner */
+
+			#banner {
+				padding-left: 2em;
+				padding-right: 2em;
+			}
+
+		/* Footer */
+
+			#footer {
+				padding-left: 2em;
+				padding-right: 2em;
+			}
+
+        /* Container */
+
+		.container {
+			width: 100%;
+		}
+
+		/* Row */
+
+			.row {
+				display: flex;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				align-items: stretch;
+			}
+
+				.row > * {
+					box-sizing: border-box;
+				}
+
+				.row.gtr-uniform > * > :last-child {
+					margin-bottom: 0;
+				}
+				
+				.row {
+					margin-top: -36px;
+					margin-left: -36px;
+				}
+
+					.row > * {
+						padding: 36px 0 0 36px;
+					}
+
+
+				.row.gtr-200 {
+					margin-top: -72px;
+					margin-left: -72px;
+				}
+
+					.row.gtr-200 > * {
+						padding: 72px 0 0 72px;
+					}
+
+					.row.gtr-200.gtr-uniform {
+						margin-top: -72px;
+					}
+
+						.row.gtr-200.gtr-uniform > * {
+							padding-top: 72px;
+						}
+
+
+	}
+
+
