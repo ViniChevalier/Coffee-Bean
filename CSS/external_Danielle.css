@@ -1,3 +1,10 @@
+/*
+*CA 2
+*Student No: 23385731
+*@Danielle Medeiros
+*30/11/24
+*/
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("fontawesome-all.min.css");
 
@@ -1740,15 +1747,6 @@ section, summary, time, mark, audio, video {
 		.image.fit {
 			display: block;
 			width: 100%;
-		}
-		.coffee-image img {
-			display: block;
-			margin: 20px auto; 
-			width: 70%; 
-			max-width: 600px; 
-			height: auto; 
-			border-radius: 10px; 
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 		}
 
 		.image.featured {
