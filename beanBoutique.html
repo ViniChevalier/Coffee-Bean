@@ -1,7 +1,7 @@
-<!--
-*CA 2
-*@Vinícius Araújo
-*25/11/24
+<!-- 
+*CA 2 
+*@Vinícius Araújo 
+*25/11/24 
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,78 +15,101 @@
 </head>
 
 <body>
-	<!-- Header -->
-	<header id="header">
-		<div class="inner">
-			<h1>Bean Boutique</h1>
-		</div>
+	<div id="page-wrapper">
 
-		<!-- Navigation -->
-		<nav id="nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="ourGrains.html">Our Grains</a></li>
-				<li><a href="beanBoutique.html">Bean Boutique</a></li>
-				<li><a href="right-sidebar.html">Right Sidebar</a></li>
-				<li><a href="history.html">About Us</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<!-- Main Content -->
-	<main class="wrapper style1">
-		<div class="container">
-			<article id="main" class="special">
-				<header>
-					<p>Discover our extensive range of premium coffee products, available at our stores throughout
-						Dublin.</p>
-				</header>
-
-				<!-- Coffee Products Section -->
-				<section id="coffeeApp">
-					<div class="row">
-						<article v-for="(product, index) in products" :key="index" class="col-4 col-12-mobile product-card">
-							<a href="#" class="image featured">
-								<img :src="product.image" :alt="product.name" />
-							</a>
-							<header>
-								<h3><a href="#">{{ product.name }}</a></h3>
-								<p class="price">€{{ product.price }}</p>
-							</header>
-							<p>{{ product.description }}</p>
-						</article>
-					</div>
-				</section>
-			</article>
-		</div>
-	</main>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="col-12">
-			<section class="contact">
-				<header>
-					<h3>Want to connect?</h3>
-				</header>
-				<p>Get in touch with us through our social channels.</p>
-				<ul class="icons">
-					<li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span
-								class="label">Facebook</span></a></li>
-					<li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span
-								class="label">Instagram</span></a></li>
-				</ul>
-			</section>
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; Coffee & Bean. All rights reserved.</li>
-				</ul>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<h1>Bean Boutique</h1>
 			</div>
-		</div>
-	</footer>
+
+			<!-- Navigation -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="ourGrains.html">Our Grains</a></li>
+					<li><a href="beanBoutique.html">Bean Boutique</a></li>
+					<li><a href="right-sidebar.html">Right Sidebar</a></li>
+					<li><a href="history.html">About Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Main Content -->
+		<main class="wrapper style1">
+			<div class="container">
+				<article id="main" class="special">
+					<header>
+						<p>Discover our extensive range of premium coffee products, available at our stores throughout
+							Dublin.</p>
+					</header>
+
+					<!-- Coffee Products Section -->
+					<section id="coffeeApp">
+						<div class="row">
+							<article v-for="(product, index) in products" :key="index"
+								class="col-4 col-12-mobile product-card">
+								<div class="image featured">
+									<img :src="product.image" :alt="product.name" />
+								</div>
+								<header>
+									<h3>{{ product.name }}</h3>
+								</header>
+								<p>{{ product.description }}</p>
+								<h5 class="price">€{{ product.price }}</h5>
+							</article>
+						</div>
+					</section>
+				</article>
+			</div>
+		</main>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="col-12">
+				<section class="contact">
+					<header>
+						<h3>Want to connect?</h3>
+					</header>
+					<p>Get in touch with us through our social channels.</p>
+					<ul class="icons">
+						<li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span
+									class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span
+									class="label">Instagram</span></a></li>
+					</ul>
+				</section>
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; Coffee & Bean. All rights reserved.</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
 
 	<!-- Scripts -->
-	<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script> <!-- Framework used to create dynamic components easily -->
-	<script src="JS/coffeeSell.js"></script> <!-- Script to insert plant data -->
+	<!-- Vue.js framework for building reactive components -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+
+	<!-- Script containing coffee product data and related logic -->
+	<script src="JS/coffeeSell.js" defer></script>
+
+	<!-- jQuery library for DOM manipulation and AJAX -->
+	<script src="assets/js/jquery.min.js"></script>
+
+	<!-- Smooth scrolling animations -->
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+
+	<!-- Breakpoints library for managing responsive design -->
+	<script src="assets/js/breakpoints.min.js"></script>
+
+	<!-- Utility functions for navigation and other tasks -->
+	<script src="assets/js/util.js"></script>
+
+	<!-- Main script with custom page-specific JavaScript -->
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
