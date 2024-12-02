@@ -8,7 +8,7 @@ const app = Vue.createApp({
                 { name: 'Colombia Blend', price: 15.99, image: 'images/colombia_blend.png', description: 'A well-rounded coffee with bright acidity and floral notes, a classic Colombian taste.' },
                 { name: 'Indonesia Blend', price: 16.99, image: 'images/indonesia_blend.png', description: 'Rich and full-bodied with a deep, earthy flavor, typical of Indonesian coffees.' },
                 { name: 'Ethiopia Blend', price: 17.99, image: 'images/ethiopia_blend.png', description: 'A fruity and aromatic coffee with a distinct floral profile, grown in the highlands of Ethiopia.' },
-                { name: 'Decaf Blend', price: 14.99, image: 'images/decaf.png', description: 'A smooth decaffeinated blend with the full flavor of traditional coffee, perfect for any time of day.' },
+                { name: 'Decaf Blend', price: 14.99, image: 'images/decaf_blend.png', description: 'A smooth decaffeinated blend with the full flavor of traditional coffee, perfect for any time of day.' },
                 { name: 'Kona Beans', price: 24.99, image: 'images/kona.png', description: 'Grown on the volcanic slopes of Hawaii, Kona beans offer a smooth, rich flavor with a hint of nuttiness.' },
                 { name: 'Sumatra Beans', price: 19.99, image: 'images/sumatra.png', description: 'Bold and full-bodied, with earthy and spicy notes, a signature of Sumatra’s coffee beans.' },
                 { name: 'Strong Blend', price: 16.99, image: 'images/strong_blend.png', description: 'For those who love a strong, robust cup, with a deep, intense flavor and rich aroma.' },
