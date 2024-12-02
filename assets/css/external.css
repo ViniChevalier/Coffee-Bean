@@ -3010,6 +3010,7 @@ section, summary, time, mark, audio, video {
 			#header {
 				background-attachment: scroll;
 				padding: 2.5em 0 0 0;
+				text-align: center;
 			}
 
 				#header .inner {
@@ -3024,6 +3025,7 @@ section, summary, time, mark, audio, video {
 
 				#header h1 {
 					font-size: 1.75em;
+					margin-bottom: 1em;
 				}
 
 				#header hr {
