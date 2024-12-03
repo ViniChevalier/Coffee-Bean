@@ -633,7 +633,6 @@ section, summary, time, mark, audio, video {
 	form input[type="password"],
 	form select,
 	form textarea {
-		-webkit-appearance: none;
 		display: block;
 		border: 0;
 		background: #fafafa;
@@ -1253,7 +1252,7 @@ section, summary, time, mark, audio, video {
 				-o-transition: background-color 0.35s ease-in-out;
 				-ms-transition: background-color 0.35s ease-in-out;
 				transition: background-color 0.35s ease-in-out;
-				-webkit-backface-visibility: hidden;
+		
 			}
 
 			.carousel .forward:after, .carousel .backward:after {
