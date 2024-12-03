@@ -1741,16 +1741,7 @@ section, summary, time, mark, audio, video {
 			display: block;
 			width: 100%;
 		}
-		.coffee-image img {
-			display: block;
-			margin: 20px auto; 
-			width: 70%; 
-			max-width: 600px; 
-			height: auto; 
-			border-radius: 10px; 
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-		}
-
+		
 		.image.featured {
 			display: block;
 			width: 100%;
