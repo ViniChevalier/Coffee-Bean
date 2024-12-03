@@ -785,7 +785,7 @@ section, summary, time, mark, audio, video {
 	}
 
 	/* Mobile portrait */
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 800px) {
 		/* Basic */
 
 			html, body {
