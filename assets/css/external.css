@@ -1347,7 +1347,7 @@ section, summary, time, mark, audio, video {
 		display: none;
 	}
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1440px) {
 
 		/* Basic */
 
