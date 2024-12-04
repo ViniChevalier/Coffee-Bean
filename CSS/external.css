@@ -807,7 +807,7 @@ button,
 
 #header {
 	position: relative;
-	background-image: url("../../images/c2.jpg");
+	background-image: url("../images/c2.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
