@@ -9,9 +9,10 @@ document.getElementById("store-selector").addEventListener("change", function ()
         const latitude = coordinates[0];
         const longitude = coordinates[1];
 
-        /*  Upadate maps with red pin */
+        /* Update location */ 
         const pinUrl = "https://upload.wikimedia.org/wikipedia/commons/4/42/Red_pin.svg";  /* URL red pin */
-        mapIframe.src = `https://www.bing.com/maps/embed?h=400&w=800&cp=${latitude}~${longitude}&lvl=16&typ=d&sty=r&pp=${latitude}~${longitude}&form=S00027`;
+        mapIframe.src = `https://www.bing.com/maps/embed?h=400&w=800&cp=${latitude}~${longitude}&lvl=16&typ=d&sty=r&form=S00027&pp=${latitude}_${longitude}`;
     } else {
-        alert("!");
+        alert("Select a store!");
     }
+});
