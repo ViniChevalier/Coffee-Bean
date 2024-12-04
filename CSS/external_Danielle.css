@@ -113,7 +113,7 @@ section, summary, time, mark, audio, video {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100vh; /* Centralização vertical */
+		height: 100vh; 
 		
 	}
 	.video-container video {

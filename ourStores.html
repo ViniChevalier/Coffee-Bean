@@ -1,138 +1,136 @@
 <!--
-*CA 2
-*Student No: 23385731
-*@Danielle Medeiros
-*30/11/24
+* CA 2
+* Student No: 23385731
+* @Danielle Medeiros
+* 30/11/24
 -->
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/external.css" />
-	<title>Coffee & Bean - Our Stories</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/external.css" />
+    <title>Coffee & Bean - Our Stories</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 </head>
 
 <body>
-	<div id="page-wrapper">
+    <div id="page-wrapper">
 
-		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-				<h1>Our Stories</h1>
-			</div>
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <h1>Our Stories</h1>
+            </div>
 
-			<!-- Navigation -->
-			<nav id="nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="ourGrains.html">Our Grains</a></li>
-					<li><a href="beanBoutique.html">Bean Boutique</a></li>
-					<li><a href="ourStores.html">Our Stores</a></li>
-					<li><a href="aboutUs.html">About Us</a></li>
-					<li><a href="contactUs.html">Contact Us</a></li>
-				</ul>
-			</nav>
-		</header>
+            <!-- Navigation -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ourGrains.html">Our Grains</a></li>
+                    <li><a href="beanBoutique.html">Bean Boutique</a></li>
+                    <li><a href="ourStores.html">Our Stores</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
 
-		<!-- Main -->
-		<div class="wrapper style1">
-			<div class="container">
-				<div class="row gtr-200">
-					<div class="col-8 col-12-mobile" id="sidebar">
-						<div class="row">
-							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/stor1.webp" alt="" /></a>
-								<header>
-									<h3><a href="#">Coffee Bean Dublin 02</a></h3>
-								</header>								
-							</article>
-							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/stor2.webp" alt="" /></a>
-								<header>
-									<h3><a href="#">Coffee Bean Grand Canal Dock</a></h3>
-								</header>
-							</article>
-							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/stor3.webp" alt="" /></a>
-								<header>
-									<h3><a href="#">Coffee Bean Dublin 02</a></h3>
-								</header>
-							</article>
-						</div>
-						<article id="main">
-							<header>
-								<h2><a href="#">Find Our Stores</a></h2>
-							</header>
-							<div class="store-box">
-								<select id="store-selector">
-									<option value="">Select a store</option>
-									<option value="31 Drury St, Dublin 2, D02 Y684"> 31 Drury St, Dublin 2, D02 Y684</option>
-									<option value="50 William St S, Dublin 2, D02 DE93">50 William St S, Dublin 2, D02 DE93</option>
-									<option value=" 32-34 Grand Canal Street Lower, Grand Canal Dock"> 32-34 Grand Canal Street Lower, Grand Canal Dock</option>
-								</select>
-								<button onclick="openMap()">Abrir no Google Maps</button>
-							
-							<iframe 
-								id="map" 
-								src="https://www.google.com/maps?q=Kaph,+Drury+Street,+Dublin,+Ireland&output=embed"
-								src="https://www.google.com/maps?q=Clement+%26+Pekoe,+50+South+William+Street,+Dublin,+Ireland&output=embed"
-								src="https://www.google.com/maps?q=3fe,+Grand+Canal+Street,+Dublin,+Ireland&output=embed" 
-								width="800px" 
-								height="400px" 
-								allowfullscreen>
-							</iframe>
-							<script src="assets/js/main.js"></script>
-							</div>
-						</article>
-					</div>
-					<div class="col-4 col-12-mobile" id="sidebar">
-						<section>
-							<header>
-								<h2>Open hours</h2>
-								<ul id="horarios"></ul>
-								<p>Status: <span id="status"></span></p>
-								<script src="scripts.js"></script>
-							</header>
-						</section>
-					</div>
-				</div>
-			</div>
-		</div>
+        <!-- Main -->
+        <div class="wrapper style1">
+            <div class="container">
+                <div class="row gtr-200">
+                    <div class="col-8 col-12-mobile" id="content">
+                        <div class="row">
+                            <article class="col-4 col-12-mobile special">
+                                <a href="#" class="image featured"><img src="images/stor1.jpg" alt="" /></a>
+                                <header>
+                                    <h3><a href="#">Coffee Bean Dublin 02</a></h3>
+                                </header>
+                                <p>31 Drury St, Dublin 2, D02 Y684</p>
+                            </article>
+                            <article class="col-4 col-12-mobile special">
+                                <a href="#" class="image featured"><img src="images/stor2.jpg" alt="" /></a>
+                                <header>
+                                    <h3><a href="#">Coffee Bean Grand Canal Dock</a></h3>
+                                </header>
+                                <p>32-34 Grand Canal Street Lower, Grand Canal Dock</p>
+                            </article>
+                            <article class="col-4 col-12-mobile special">
+                                <a href="#" class="image featured"><img src="images/stor3.jpg" alt="" /></a>
+                                <header>
+                                    <h3><a href="#">Coffee Bean Dublin 02</a></h3>
+                                </header>
+                                <p>50 William St, Dublin, D02 DE93</p>
+                            </article>
+                        </div>
+                        
+                        <!-- Bing map -->
+                        <article id="main">
+                            <header>
+                                <h2><a href="#">Find Our Stores</a></h2>
+                            </header>
+                            <select id="store-selector">
+                                <option value="">Select a store</option>
+                                <option value="53.342812~-6.263479">31 Drury St, Dublin 2, D02 Y684</option>
+                                <option value="53.340619~-6.260544">50 William St S, Dublin 2, D02 DE93</option>
+                                <option value="53.339941~-6.238404">32-34 Grand Canal Street Lower, Grand Canal Dock</option>
+                            </select>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="col-12">
-				<section class="contact">
-					<header>
-						<h3>Want to connect?</h3>
-					</header>
-					<p>Get in touch with us through our social channels.</p>
-					<ul class="icons">
-						<li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span
-									class="label">Facebook</span></a></li>
-						<li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span
-									class="label">Instagram</span></a></li>
-					</ul>
-				</section>
-				<div class="copyright">
-					<ul class="menu">
-						<li>&copy; Coffee & Bean. All rights reserved.</li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	</div>
+                            <iframe id="map" 
+                                src="https://www.bing.com/maps/embed?h=400&w=800&cp=53.342596~-6.266012&lvl=16&typ=d&sty=r&form=S00027&pp=53.342596~-6.266012" 
+                                width="800" height="400" allowfullscreen>
+                            </iframe>
+                        </article>
+                    </div>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+                    <div class="col-4 col-12-mobile" id="sidebar">
+                        <section>
+                            <header>
+                                <h2>Open hours</h2>
+                            </header>
+                            <ul id="time"></ul>
+                            <div>
+                                <p>Status: <span id="status"></span></p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="col-12">
+                <section class="contact">
+                    <header>
+                        <h3>Want to connect?</h3>
+                    </header>
+                    <p>Get in touch with us through our social channels.</p>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+                <div class="copyright">
+                    <ul class="menu">
+                        <li>&copy; Coffee & Bean. All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

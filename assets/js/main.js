@@ -204,7 +204,7 @@
 
 	});
 
-
+	/* Store hours */
 	const storeHours = {
 		mon: { opens: "09:00", closes: "18:00" },
 		tue: { opens: "09:00", closes: "18:00" },
@@ -218,11 +218,11 @@
 	function displayStoreHours() {
 		const days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 		const today = days[new Date().getDay()];
-		const hoursContainer = document.getElementById("horarios");
+		const hoursContainer = document.getElementById("time");
 		const statusElement = document.getElementById("status");
 	
 		let status = "Closed";
-		let statusClass = "status-fechado";
+		let statusClass = "status-closed";
 	
 		days.forEach(day => {
 			const hour = storeHours[day];
@@ -232,7 +232,7 @@
 				: `${day.toUpperCase()}: Closed`;
 	
 			if (day === today) {
-				li.classList.add("hoje");
+				li.classList.add("today");
 	
 				if (hour) {
 					const now = new Date();
@@ -245,7 +245,7 @@
 	
 					if (now >= opensAt && now <= closesAt) {
 						status = "Open";
-						statusClass = "status-aberto";
+						statusClass = "status-open";
 					}
 				}
 			}
@@ -256,23 +256,26 @@
 		statusElement.textContent = status;
 		statusElement.className = statusClass;
 	}
-	
-	function updateMap() {
+		window.onload = displayStoreHours;
+
+	/* Bing Maps */
+	document.getElementById("store-selector").addEventListener("change", function () {
 		const storeSelector = document.getElementById("store-selector");
-		const address = storeSelector.value;
+		const mapIframe = document.getElementById("map");
+		const selectedValue = storeSelector.value;
 	
-		if (address) {
-			const formattedAddress = encodeURIComponent(address);
-			const mapIframe = document.getElementById("map");
-			mapIframe.src = `https://www.google.com/maps?q=${formattedAddress}&output=embed`;
+		if (selectedValue) {
+			const coordinates = selectedValue.split("~");
+			const latitude = coordinates[0];
+			const longitude = coordinates[1];
+	
+			/*  Upadate maps with red pin */
+			const pinUrl = "https://upload.wikimedia.org/wikipedia/commons/4/42/Red_pin.svg";  /* URL red pin */
+			mapIframe.src = `https://www.bing.com/maps/embed?h=400&w=800&cp=${latitude}~${longitude}&lvl=16&typ=d&sty=r&pp=${latitude}~${longitude}&form=S00027`;
 		} else {
-			alert("Please select a store.");
+			alert("Por favor, selecione uma loja!");
 		}
-	}
-	
-	window.onload = displayStoreHours;
-	
-	
+	});
   
 
 })(jQuery);
