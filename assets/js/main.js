@@ -204,4 +204,75 @@
 
 	});
 
+
+	const storeHours = {
+		mon: { opens: "09:00", closes: "18:00" },
+		tue: { opens: "09:00", closes: "18:00" },
+		wed: { opens: "09:00", closes: "18:00" },
+		thu: { opens: "09:00", closes: "18:00" },
+		fri: { opens: "09:00", closes: "20:00" },
+		sat: { opens: "10:00", closes: "16:00" },
+		sun: null,
+	};
+	
+	function displayStoreHours() {
+		const days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+		const today = days[new Date().getDay()];
+		const hoursContainer = document.getElementById("horarios");
+		const statusElement = document.getElementById("status");
+	
+		let status = "Closed";
+		let statusClass = "status-fechado";
+	
+		days.forEach(day => {
+			const hour = storeHours[day];
+			const li = document.createElement("li");
+			li.textContent = hour
+				? `${day.toUpperCase()}: ${hour.opens} - ${hour.closes}`
+				: `${day.toUpperCase()}: Closed`;
+	
+			if (day === today) {
+				li.classList.add("hoje");
+	
+				if (hour) {
+					const now = new Date();
+					const [openHour, openMinute] = hour.opens.split(":").map(Number);
+					const [closeHour, closeMinute] = hour.closes.split(":").map(Number);
+					const opensAt = new Date();
+					opensAt.setHours(openHour, openMinute, 0);
+					const closesAt = new Date();
+					closesAt.setHours(closeHour, closeMinute, 0);
+	
+					if (now >= opensAt && now <= closesAt) {
+						status = "Open";
+						statusClass = "status-aberto";
+					}
+				}
+			}
+	
+			hoursContainer.appendChild(li);
+		});
+	
+		statusElement.textContent = status;
+		statusElement.className = statusClass;
+	}
+	
+	function updateMap() {
+		const storeSelector = document.getElementById("store-selector");
+		const address = storeSelector.value;
+	
+		if (address) {
+			const formattedAddress = encodeURIComponent(address);
+			const mapIframe = document.getElementById("map");
+			mapIframe.src = `https://www.google.com/maps?q=${formattedAddress}&output=embed`;
+		} else {
+			alert("Please select a store.");
+		}
+	}
+	
+	window.onload = displayStoreHours;
+	
+	
+  
+
 })(jQuery);
