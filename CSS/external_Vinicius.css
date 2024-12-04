@@ -456,6 +456,10 @@ section, summary, time, mark, audio, video {
 	padding: 2em 0 2em 0;
 }
 
+	.wrapper.style2 {
+		padding-top: 0;
+	}
+
 /* Header */
 
 	#header {
