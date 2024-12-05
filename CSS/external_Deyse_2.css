@@ -16,7 +16,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 /* Basic */  /*Essential*/
 
@@ -59,6 +60,7 @@ section, summary, time, mark, audio, video {
 		font-weight: 400;
 		color: #483949;
 		line-height: 1.25em;
+    
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
