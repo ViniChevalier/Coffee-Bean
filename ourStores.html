@@ -8,11 +8,11 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Coffee & Bean - Our Stores</title>
-	<link rel="stylesheet" href="CSS/external.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coffee & Bean - Our Stores</title>
+    <link rel="stylesheet" href="CSS/external.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
@@ -40,64 +40,73 @@
         <!-- Main -->
         <div class="wrapper style1">
             <div class="container">
-                <div class="row gtr-200">
-                    <div class="col-8 col-12-mobile" id="content">
-                        <div class="row">
-                            <article class="col-4 col-12-mobile special">
-                                <a href="#" class="image featured"><img src="images/store1.jpg" alt="" /></a>
-                                <header>
-                                    <h3><a href="#">Coffee Bean Dublin 02</a></h3>
-                                </header>
-                                <p>31 Drury St, Dublin 2, D02 Y684</p>
-                            </article>
-                            <article class="col-4 col-12-mobile special">
-                                <a href="#" class="image featured"><img src="images/store2.jpg" alt="" /></a>
-                                <header>
-                                    <h3><a href="#">Coffee Bean Grand Canal Dock</a></h3>
-                                </header>
-                                <p>32-34 Grand Canal Street Lower, Grand Canal Dock</p>
-                            </article>
-                            <article class="col-4 col-12-mobile special">
-                                <a href="#" class="image featured"><img src="images/store3.jpg" alt="" /></a>
-                                <header>
-                                    <h3><a href="#">Coffee Bean Dublin 02</a></h3>
-                                </header>
-                                <p>50 William St, Dublin, D02 DE93</p>
-                            </article>
+                <div class="row">
+                    <article class="col-4 col-12-mobile special">
+                        <div class="image featured">
+                            <img src="images/store1.jpg" alt="">
                         </div>
+                        <header>
+                            <h3>Coffee Bean Drury Street</h3>
+                            <h4>31 Drury St, Dublin 2, D02 Y684</h4>
+                        </header>
                         
-                        <!-- Bing map -->
-                        <article id="main">
+                    </article>
+                    <article class="col-4 col-12-mobile special">
+                        <div class="image featured">
+                            <img src="images/store2.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Coffee Bean Grand Canal</h3>
+                            <h4>32-34 Grand Canal Street Lower, Grand Canal Dock</h4>
+                        </header>                        
+                    </article>
+                    <article class="col-4 col-12-mobile special">
+                        <div class="image featured">
+                            <img src="images/store3.jpg" alt="">
+                        </div>
+                        <header>
+                            <h3>Coffee Bean William</h3>
+                            <h4>50 William St, Dublin, D02 DE93</h4>
+                        </header>                        
+                    </article>
+                </div>
+
+                <!-- Bing map -->
+                <div class="container">
+                    <div class="row">
+                        <article class="col-4 col-12-mobile special">                        
                             <header>
-                                <h2><a href="#">Find Our Stores</a></h2>
+                                 <h2>Find Our Stores</h2>
                             </header>
                             <select id="store-selector">
-								<option value="">Select a store</option>
-								<option value="53.342812~-6.263479">31 Drury St, Dublin 2, D02 Y684</option>
-								<option value="53.340619~-6.260544">50 William St S, Dublin 2, D02 DE93</option>
-								<option value="53.339941~-6.238404">32-34 Grand Canal Street Lower, Grand Canal Dock</option>
-							</select>
-						
-							<iframe id="map" 
-								src="https://www.bing.com/maps/embed?h=400&w=800&cp=53.342596~-6.266012&lvl=16&typ=d&sty=r&form=S00027&pp=53.342596~-6.266012" 
-								width="800" height="400" allowfullscreen>
-							</iframe>
+                                <option value="">Select a store</option>
+                                <option value="53.342812~-6.263479">31 Drury St, Dublin 2, D02 Y684</option>
+                                <option value="53.340619~-6.260544">50 William St S, Dublin 2, D02 DE93</option>
+                                 <option value="53.339941~-6.238404">32-34 Grand Canal Street Lower, Grand Canal Dock</option>
+                            </select>
+
+                            <iframe id="map"
+                                src="https://www.bing.com/maps/embed?h=400&w=800&cp=53.342596~-6.266012&lvl=16&typ=d&sty=r&form=S00027&pp=53.342596~-6.266012"
+                                width="800" height="400" allowfullscreen>
+                            </iframe>
+                        </article>
+                    
+                         
+                    
+                        <article class="off-5 col-12-mobile special">    
+                            <section>
+                                <header>
+                                     <h2>Open hours</h2>
+                                </header>
+                                <ul id="time"></ul>
+                                <div>
+                                    <p>Status: <span id="status"></span></p>
+                                </div>
+                            </section>
                         </article>
                     </div>
-
-                    <div class="col-4 col-12-mobile" id="sidebar">
-                        <section>
-                            <header>
-                                <h2>Open hours</h2>
-                            </header>
-                            <ul id="time"  id="status"></ul>
-                            <div>
-                                <p>Status: <span id="status"></span></p>
-                            </div>
-                        </section>
-                    </div>
                 </div>
-            </div>
+
         </div>
 
         <!-- Footer -->
@@ -109,8 +118,10 @@
                     </header>
                     <p>Get in touch with us through our social channels.</p>
                     <ul class="icons">
-                        <li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span
+                                    class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com" class="icon brands fa-instagram"><span
+                                    class="label">Instagram</span></a></li>
                     </ul>
                 </section>
                 <div class="copyright">
@@ -124,9 +135,9 @@
 
     <!-- Scripts -->
     <script src="JS/displaystorehours.js"></script>
-	<script src="JS/main.js"></script>
-	<script src="JS/bingmap.js"></script>
-	
+    <script src="JS/main.js"></script>
+    <script src="JS/bingmap.js"></script>
+
 </body>
 
 </html>
