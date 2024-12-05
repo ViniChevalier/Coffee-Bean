@@ -184,14 +184,14 @@ section, summary, time, mark, audio, video {
 .video-container {
 	margin: 0;
 	padding: 0;
-	overflow: hidden; /* Evita vazamentos de conteúdo fora do container */
+	overflow: hidden;
 }
 
 .video-container video {
-	display: block; /* Remove espaços extras ao redor do vídeo */
-	border: none; /* Remove bordas ao redor do vídeo */
-	width: 100%; /* Ajusta o vídeo para ocupar 100% da largura do container, se necessário */
-	height: auto; /* Mantém a proporção correta */
+	display: block;
+	border: none;
+	width: 100%;
+	height: auto;
 }
 
 /* Row */  /*Essential*/
