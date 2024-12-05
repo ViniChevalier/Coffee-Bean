@@ -1,9 +1,3 @@
-/*
-*CA 2
-*Student No: 23157607
-*@Deysemare Menezes Santos
-*30/11/24
-*/
 
 body {
   font-family: Arial, sans-serif;
@@ -59,7 +53,7 @@ textarea {
 
 /* Button styling */
 button[type="submit"] {
-  background-color: #654321; /* Dark brown color */
+  background-color: #992810; /* Dark brown color */
   color: #ffffff; /* White text */
   border: none; /* Removes border */
   padding: 10px 15px;
