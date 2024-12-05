@@ -1,5 +1,92 @@
-.special {
-  color: red !important;
-  font-weight: 900;
+/*
+*CA 2
+*Student No: 23157607
+*@Deysemare Menezes Santos
+*30/11/24
+*/
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Wrapper styling */
+.wrapper.style1 {
+  padding: 20px;
+  background-color: #ffffff; /* White background for the wrapper */
+  border: 1px solid #ddd; /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 600px; /* Limits width for better readability */
+  margin: 20px auto; /* Center the wrapper on the page */
+}
+
+/* Container styling */
+.container {
+  padding: 20px;
+}
+
+/* Form label styling */
+label {
+  display: block; /* Labels on their own line */
+  font-weight: bold;
+  color: #654321; /* Dark brown color */
+  margin-bottom: 5px; /* Spacing between label and input */
+  font-size: 1rem; /* Proportional font size */
+}
+
+/* Input, textarea, and select styling */
+input[type="name"],
+input[type="email"],
+textarea,
+select {
+  width: 100%; /* Full-width inputs */
+  padding: 10px;
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 1rem; /* Proportional font size */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-bottom: 10px; /* Spacing between form elements */
+}
+
+/* Textarea specific styling */
+textarea {
+  resize: vertical; /* Allow vertical resizing only */
+  line-height: 1.5; /* Improves readability of text inside */
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #654321; /* Dark brown color */
+  color: #ffffff; /* White text */
+  border: none; /* Removes border */
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer; /* Pointer cursor for interactivity */
+  border-radius: 4px; /* Rounded button */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button[type="submit"]:hover {
+  background-color: #4e3024; /* Slightly darker brown on hover */
+}
+
+/* Error message styling */
+.form-text.text-danger {
+  color: #d9534f; /* Bootstrap-like red for error text */
+  font-size: 0.875rem; /* Slightly smaller font size */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .wrapper.style1 {
+      padding: 15px;
+  }
+  
+  label, input, textarea, select, button {
+      font-size: 0.9rem; /* Slightly smaller on smaller screens */
+  }
 }
