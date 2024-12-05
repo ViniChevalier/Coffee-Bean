@@ -179,6 +179,23 @@ section, summary, time, mark, audio, video {
 		max-width: 100%;
 		width: 1400px;
 	}
+/* class styleehseet Danielle - pag. About U */
+
+	.video-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh; 
+		
+	}
+	.video-container video {
+		width: 80%;
+		max-width: 1000px;
+		height: auto;
+		border: 5px solid #333;
+		border-radius: 10px;
+	}	
+
 
 /* Row */  /*Essential*/
 
