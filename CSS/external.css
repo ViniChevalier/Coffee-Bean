@@ -1881,53 +1881,65 @@ button,
 
 		/* Coffee */
 
-		#coffeeApp {
-			padding: 20px;
-		  }
-		.product-card {
-			display: flex;
-			flex-direction: row;
-			align-items: flex-start;
-			gap: 20px;
-			padding: 20px;
-			border: 1px solid #ccc;
-			border-radius: 8px;
-		  }
+			#coffeeApp {
+			  padding: 20px;
+			}
 		  
-		  .product-card .image {
-			width: 30%;
-			height: auto;
-		  }
+			.product-card {
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				gap: 20px;
+				padding: 20px;
+				border: 1px solid #ccc;
+				border-radius: 8px;
+				width: 100%;
+			  }
+			
+			  .product-card .image {
+				flex-shrink: 0;
+				width: 95%;
+				height: auto;
+				
+			  }
+			
+			  .product-card .image img {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: contain;
+				border-radius: 8px;
+			  }
+			
+			  .product-card .content {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				gap: 5px;
+			  }
+			
+			  .product-card header h3 {
+				font-size: 1.2em;
+				margin-bottom: 5px;
+				color: #333;
+				align-self: center;
+			  }
+			
+			  .product-card p {
+				font-size: 1em;
+				line-height: 1.5;
+				margin: 0;
+				color: #555;
+				margin-right: 10px;
+				align-self: center;
+			  }
+			
+			  .product-card .price {
+				font-size: 1.2em;
+				font-weight: bold;
+				color: #000;
+				align-self: center;
+			  }
 		  
-		  .product-card .image img {
-			width: 100%; 
-			border-radius: 8px;
-		  }
-		  
-		  .product-card .content {
-			flex: 1;
-			display: flex;
-			flex-direction: column;
-		  }
-		  
-		  .product-card header h3 {
-			font-size: 1.5em;
-			margin-bottom: 10px;
-			color: #333;
-		  }
-		  
-		  .product-card p {
-			font-size: 1em;
-			line-height: 1.5;
-			margin: 10px 0;
-			color: #555;
-		  }
-		  
-		  .product-card .price {
-			font-size: 1.2em;
-			font-weight: bold;
-			color: #000;
-		  }
 					
 
 		/* Row */

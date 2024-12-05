@@ -47,19 +47,22 @@
 					<!-- Coffee Products Section -->
 					<section id="coffeeApp">
 						<div class="row">
-							<article v-for="(product, index) in products" :key="index"
-								class="col-4 col-12-mobile product-card">
-								<div class="image featured">
-									<img :src="product.image" :alt="product.name" />
-								</div>
+						  <article v-for="(product, index) in products" :key="index" class="col-4 col-12-mobile product-card">
+							<div class="product-card-content">
+							  <div class="image featured">
+								<img :src="product.image" :alt="product.name" />
+							  </div>
+							  <div class="content">
 								<header>
-									<h3>{{ product.name }}</h3>
+								  <h3>{{ product.name }}</h3>
 								</header>
 								<p>{{ product.description }}</p>
 								<h5 class="price">€{{ product.price }}</h5>
-							</article>
+							  </div>
+							</div>
+						  </article>
 						</div>
-					</section>
+					  </section>
 				</article>
 			</div>
 		</main>
