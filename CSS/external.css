@@ -181,21 +181,18 @@ section, summary, time, mark, audio, video {
 	}
 /* class styleehseet Danielle - pag. About U */
 
-	.video-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh; 
-		
-	}
-	.video-container video {
-		width: 80%;
-		max-width: 1000px;
-		height: auto;
-		border: 5px solid #333;
-		border-radius: 10px;
-	}	
+.video-container {
+	margin: 0;
+	padding: 0;
+	overflow: hidden; /* Evita vazamentos de conteúdo fora do container */
+}
 
+.video-container video {
+	display: block; /* Remove espaços extras ao redor do vídeo */
+	border: none; /* Remove bordas ao redor do vídeo */
+	width: 100%; /* Ajusta o vídeo para ocupar 100% da largura do container, se necessário */
+	height: auto; /* Mantém a proporção correta */
+}
 
 /* Row */  /*Essential*/
 
