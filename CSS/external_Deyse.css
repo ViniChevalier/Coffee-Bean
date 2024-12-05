@@ -9,7 +9,7 @@ body {
 /* Wrapper styling */
 .wrapper.style1 {
   padding: 20px;
-  background-color: #ffffff; /* White background for the wrapper */
+  background-color: #f1ecec; /* White background for the wrapper */
   border: 1px solid #ddd; /* Subtle border */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
   border-radius: 8px; /* Rounded corners */
@@ -147,7 +147,7 @@ ul.icons li a .label {
 }
 
 .coffee-section header p {
-  color: #333;
+  color: #f7f4f4;
   font-size: 1rem;
   margin-top: 10px;
   line-height: 1.5;
