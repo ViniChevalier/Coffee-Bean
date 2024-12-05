@@ -138,14 +138,7 @@ ul.icons li a .label {
       height: 40px;
   }
 }
-/* Section styling */
-.coffee-section {
-  text-align: center;
-  padding: 20px;
-  background-color: #f7f3f0; /* Coffee-inspired light background */
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Header styling */
 .coffee-section header h2 {
