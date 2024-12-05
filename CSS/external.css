@@ -18,7 +18,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-/* Basic */
+/* Basic */  /*Essential*/
 
 	html {
 		box-sizing: border-box;
@@ -172,7 +172,7 @@ section, summary, time, mark, audio, video {
 		font-size: 0.8em;
 	}
 
-/* Container */
+/* Container */  /*Essential*/
 
 	.container {
 		margin: 0 auto;
@@ -180,7 +180,7 @@ section, summary, time, mark, audio, video {
 		width: 1400px;
 	}
 
-/* Row */
+/* Row */  /*Essential*/
 
 	.row {
 		display: flex;
@@ -423,7 +423,7 @@ section, summary, time, mark, audio, video {
 					padding-top: 80px;
 				}
 
-/* Sections/Article */
+/* Sections/Article */  /*Essential - Required review*/
 
 	section, article {
 		margin-bottom: 3em;
@@ -457,7 +457,7 @@ section, summary, time, mark, audio, video {
 		margin: 2.5em 0 0 0;
 	}
 
-/* Image */
+/* Image */ /*Essential - Required review*/
 
 	.image {
 		position: relative;
@@ -497,7 +497,7 @@ section, summary, time, mark, audio, video {
 				width: auto;
 			}
 
-/* List */
+/* List */ /* Review */
 
 	ul {
 		list-style: disc;
@@ -517,7 +517,7 @@ section, summary, time, mark, audio, video {
 			padding-left: 0.25em;
 		}
 
-/* Actions */
+/* Actions */ /* Review */
 
 	ul.actions {
 		margin: 3em 0 0 0;
@@ -543,7 +543,7 @@ section, summary, time, mark, audio, video {
 				margin-right: 0;
 			}
 
-/* Divided */
+/* Divided */ /* Review */
 
 	ul.divided {
 		list-style: none;
@@ -563,7 +563,7 @@ section, summary, time, mark, audio, video {
 				margin-top: 0;
 			}
 
-/* Menu */
+/* Menu */ /* Review */
 
 	ul.menu {
 		height: 1em;
@@ -585,7 +585,7 @@ section, summary, time, mark, audio, video {
 				margin-left: 0;
 			}
 
-/* Icons */
+/* Icons */ /*Essential*/
 
 	ul.icons {
 		position: relative;
@@ -619,7 +619,7 @@ section, summary, time, mark, audio, video {
 					color: #ef8376;
 				}
 
-/* Form */
+/* Form */ /* Review */
 
 	form label {
 		display: block;
@@ -686,7 +686,7 @@ section, summary, time, mark, audio, video {
 		border: 0;
 	}
 
-/* Button Revisar*/
+/* Button */  /* Review */
 
 input[type="button"],
 input[type="submit"],
@@ -737,7 +737,7 @@ button,
 			}
 
 
-/* Icons */
+/* Icons */ /* Review - Merge with one abouve forms*/
 
 	.icon {
 		text-decoration: none;
@@ -791,7 +791,7 @@ button,
 				margin: 0 0 2em 0;
 			}
 
-/* Wrapper */
+/* Wrapper */ /*Essential - Required review*/
 
 	.wrapper {
 		background: #fff;
@@ -803,7 +803,7 @@ button,
 			padding-top: 0;
 		}
 
-/* Header */
+/* Header */ /*Essential*/
 
 #header {
 	position: relative;
@@ -909,7 +909,7 @@ button,
 		opacity: 1;
 	}
 
-/* Nav */
+/* Nav */ /*Essential*/
 
 #nav {
 	position: absolute;
@@ -982,7 +982,7 @@ button,
 					display: none;
 				}
 
-/* Content */
+/* Content */ /*Essential - Required review*/
 
 #content > hr {
 	top: 3em;
@@ -993,7 +993,7 @@ button,
 	margin-bottom: 0;
 }
 
-/* Main */
+/* Main */ /*Essential - Required review*/
 
 #main {
 	margin-bottom: 0;
@@ -1004,7 +1004,7 @@ button,
 		padding-top: 2em;
 	}
 
-/* Coffee */
+/* Coffee */ /*Essential*/
 
 .product-card {
 	display: flex;
@@ -1040,7 +1040,7 @@ button,
 		line-height: 1.3;
 	}
 
-/* Footer */
+/* Footer */ /*Essential*/
 
 #footer {
 	position: relative;
@@ -1080,7 +1080,7 @@ button,
 		cursor: default;
 	}
 
-/* Carousel */ 
+/* Carousel */ /* Review */
 
 .carousel {
 	position: relative;
@@ -1133,7 +1133,7 @@ button,
 			text-align: center;
 		}
 
-/* Mobile */
+/* Mobile */ /*Essential - Required review*/
 
 	#navPanel, #titleBar {
 		display: none;
