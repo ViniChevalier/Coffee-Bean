@@ -815,7 +815,7 @@ button,
 	text-align: center;
 	padding: 7.5em 0 2em 0;
 	cursor: default;
-}
+} 
 
 	#header:before {
 		content: '';
@@ -1184,6 +1184,7 @@ button,
 
 			.container {
 				width: 100%;
+        
 			}	
 
 			
