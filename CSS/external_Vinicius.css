@@ -636,13 +636,13 @@ section, summary, time, mark, audio, video {
 		position: relative;
 		overflow: hidden;
 		padding: 6em 0 6em 0;
-		background: #2b252c;
+		background: rgba(157, 113, 80, 0.75);
 		color: #fff;
 	}
 
 		#footer .icon.circled {
-			background: #fff;
-			color: #2b252c;
+			background: rgba(214, 155, 109, 0.656);
+			color: rgba(157, 113, 80, 0.17);
 		}
 
 		#footer h3{
@@ -660,7 +660,7 @@ section, summary, time, mark, audio, video {
 
 		#footer .copyright {
 			text-align: center;
-			color: rgba(128, 128, 128, 0.75);
+			color: #fff;
 			font-size: 0.8em;
 			cursor: default;
 		}
