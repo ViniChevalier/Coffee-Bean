@@ -468,7 +468,8 @@ section, summary, time, mark, audio, video {
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #fff;
+		color: rgb(255, 255, 255);
+		text-shadow: 2px 2px 5px rgb(0, 0, 0);
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
@@ -499,9 +500,10 @@ section, summary, time, mark, audio, video {
 			}
 
 		#header h1 {
-			color: rgb(80, 63, 53);
+			color: rgb(255, 255, 255);
 			font-size: 3em;
 			line-height: 1em;
+			text-shadow: 2px 2px 5px rgb(0, 0, 0);
 		}
 
 			#header h1 a {
