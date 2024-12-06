@@ -483,7 +483,6 @@ section, summary, time, mark, audio, video {
 		}
 
 		#header .inner {
-			position: relative;
 			z-index: 1;
 			margin: 0;
 			display: inline-block;
