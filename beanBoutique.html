@@ -8,34 +8,40 @@
 
 <head>
 	<meta charset="utf-8" />
-	<meta name="description" content="Coffee & Bean - Flavours of the world in your cup"/>
-	<meta name="robots" content="index"/>
-	<meta name="keywords" content="coffee,coffee near me,star bucks,coffee shops near me,coffee shop,
-	coffee cafe near me,flat white,takeaway near me,food near me,places to eat lunch near me,places to eat near me,food places near me,nespresso ireland,
-	espresso,best restaurants near me,irish coffee,buy coffee,preparing your coffee,organic coffee,premium coffee,capuccino,americano,coffee plantation
-	gym and coffee,gym plus coffee,coffee machine,delonghi coffee machine,coffee table,costa coffee,discount coffee,baileys coffee,costa coffee hot chocolate death,
-	coffee grinder,tassimo coffee machine,the art of coffee"/>
+	<meta name="description" content="Coffee & Bean - Flavours of the world in your cup" />
+	<meta name="robots" content="index" />
+	<meta name="keywords"
+		content="coffee, coffee near me, starbucks, coffee shops near me, coffee shop, coffee cafe near me, flat white, takeaway near me,
+		 food near me, places to eat lunch near me, places to eat near me, food places near me, nespresso ireland, espresso, best restaurants near me, 
+		 irish coffee, buy coffee, preparing your coffee, organic coffee, premium coffee, cappuccino, americano, coffee plantation, gym and coffee,
+		 gym plus coffee, coffee machine, delonghi coffee machine, coffee table, costa coffee, discount coffee, baileys coffee, costa coffee hot chocolate death, 
+		 coffee grinder, tassimo coffee machine, the art of coffee" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Coffee & Bean - Bean Boutique</title>
+
+	<!-- Link to external stylesheet -->
 	<link rel="stylesheet" href="CSS/external.css" />
 	<!-- <link rel="stylesheet" href="CSS/external_Danielle.css" /> -->
 	<!-- <link rel="stylesheet" href="CSS/external_Deyse.css" /> -->
 	<!-- <link rel="stylesheet" href="CSS/external_Vinicius.css" /> -->
+
+	<!-- Font Awesome icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+	<!-- Bootstrap CSS for responsive layout and components -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-	
 </head>
 
 <body>
 	<div id="page-wrapper">
 
-		<!-- Header -->
+		<!-- Header Section -->
 		<header id="header">
 			<div class="inner">
 				<h1>Bean Boutique</h1>
 			</div>
 
-			<!-- Navigation -->
+			<!-- Navigation Bar -->
 			<nav id="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -47,7 +53,8 @@
 				</ul>
 			</nav>
 		</header>
-		<!-- Main Content -->
+
+		<!-- Main Content Section -->
 		<main class="wrapper style1">
 			<div class="container">
 				<article id="main" class="special">
@@ -56,9 +63,10 @@
 							Dublin.</p>
 					</header>
 
-					<!-- Coffee Products Section -->
+					<!-- Coffee Products Display -->
 					<section id="coffeeApp">
 						<div class="row">
+							<!-- Loop through each coffee product and display its details -->
 							<article v-for="(product, index) in products" :key="index" class="col-lg-4 col-md-6 mb-4">
 								<div class="card h-100">
 									<img :src="product.image" :alt="product.name" class="card-img-top">
@@ -75,7 +83,7 @@
 			</div>
 		</main>
 
-		<!-- Footer -->
+		<!-- Footer Section -->
 		<footer id="footer">
 			<div class="col-12">
 				<section class="contact">
@@ -83,6 +91,7 @@
 						<h3>Want to connect?</h3>
 					</header>
 					<p>Get in touch with us through our social channels.</p>
+					<!-- Social Media Links -->
 					<ul class="icons">
 						<li><a href="https://www.facebook.com" class="icon brands fa-facebook-f"><span
 									class="label">Facebook</span></a></li>
@@ -90,6 +99,7 @@
 									class="label">Instagram</span></a></li>
 					</ul>
 				</section>
+				<!-- Copyright Notice -->
 				<div class="copyright">
 					<ul class="menu">
 						<li>&copy; Coffee & Bean. All rights reserved.</li>
@@ -99,7 +109,7 @@
 		</footer>
 	</div>
 
-	<!-- Scripts -->
+	<!-- External Scripts -->
 	<!-- Vue.js framework for building reactive components -->
 	<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
 
@@ -122,6 +132,7 @@
 	<!-- Main script with custom page-specific JavaScript -->
 	<script src="JS/main.js"></script>
 
+	<!-- Bootstrap JavaScript bundle for responsive components -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
 </body>
