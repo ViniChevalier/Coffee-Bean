@@ -496,7 +496,30 @@ section, video {
 				width: auto;
 			}
 
-/* Icons */ /* Review - Merge with one abouve forms*/
+/* Menu */ /* Review */
+
+ul.menu {
+	height: 1em;
+	line-height: 1em;
+	list-style: none;
+	padding-left: 0;
+}
+
+	ul.menu li {
+		display: inline-block;
+		border-left: solid 1px rgba(128, 128, 128, 0.2);
+		padding-left: 1.25em;
+		margin-left: 1.25em;
+	}
+
+		ul.menu li:first-child {
+			border-left: 0;
+			padding-left: 0;
+			margin-left: 0;
+		}			
+
+
+/* Icons */
 
 	.icon {
 		text-decoration: none;
@@ -549,6 +572,38 @@ section, video {
 			header .icon.circled {
 				margin: 0 0 2em 0;
 			}
+
+			ul.icons {
+				position: relative;
+				background: rgba(128, 128, 128, 0.05);
+				border-radius: 4em;
+				display: inline-block;
+				padding: 0.35em 0.75em 0.35em 0.75em;
+				font-size: 1.25em;
+				cursor: default;
+				list-style: none;
+			}
+		
+				ul.icons li {
+					display: inline-block;
+					padding-left: 0;
+				}
+		
+					ul.icons li a {
+						display: inline-block;
+						background: none;
+						width: 2.5em;
+						height: 2.5em;
+						line-height: 2.5em;
+						text-align: center;
+						border-radius: 100%;
+						border: 0;
+						color: inherit;
+					}
+		
+						ul.icons li a:hover {
+							color: #ef8376;
+						}		
 
 /* Wrapper */
 
