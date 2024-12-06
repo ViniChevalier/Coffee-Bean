@@ -2028,6 +2028,20 @@ ul.menu {
 			font-weight: bold;
 		}
 
+	/* Video */
+
+.video-container {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.video-container video {
+	display: block;
+	border: none;
+	width: 100%;
+	height: auto;
+
 	
 		
 	}
