@@ -1,4 +1,5 @@
 /* Store hours */
+/*Get days of the week */
 const storeHours = {
     mon: { opens: "09:00", closes: "18:00" },
     tue: { opens: "09:00", closes: "18:00" },
@@ -9,6 +10,7 @@ const storeHours = {
     sun: null,
 };
 
+/*Get day of week (today) and time (now) to set day and time  */
 function displayStoreHours() {
     const days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
     const today = days[new Date().getDay()];
@@ -25,6 +27,7 @@ function displayStoreHours() {
             ? `${day.toUpperCase()}: ${hour.opens} - ${hour.closes}`
             : `${day.toUpperCase()}: Closed`;
 
+            /*Emphasise today = day of week  */
         if (day === today) {
             li.classList.add("today");
 
@@ -37,6 +40,7 @@ function displayStoreHours() {
                 const closesAt = new Date();
                 closesAt.setHours(closeHour, closeMinute, 0);
 
+                /*Show the status of the shopping */
                 if (now >= opensAt && now <= closesAt) {
                     status = "Open";
                     statusClass = "status-open";

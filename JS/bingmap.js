@@ -1,9 +1,12 @@
 /* Bing Maps */
+
+/* Get the change in the menu*/
 document.getElementById("store-selector").addEventListener("change", function () {
     const storeSelector = document.getElementById("store-selector");
     const mapIframe = document.getElementById("map");
     const selectedValue = storeSelector.value;
 
+    /* select the menu value */
     if (selectedValue) {
         const coordinates = selectedValue.split("~");
         const latitude = coordinates[0];
