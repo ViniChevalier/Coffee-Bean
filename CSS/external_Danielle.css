@@ -428,7 +428,10 @@ section, summary, time, mark, audio, video {
 	section, article {
 		margin-bottom: 3em;
 	}	
-
+		section > :last-child, section:last-child, article > :last-child, article:last-child {
+	margin-bottom: 0;
+	}
+	
 		section.special > header, section.special > footer, article.special > header, article.special > footer {
 			text-align: center;
 		}
@@ -621,6 +624,59 @@ section, summary, time, mark, audio, video {
 				}
 
 /* Icons */ 
+
+.icon {
+	text-decoration: none;
+	text-decoration: none;
+}
+
+	.icon:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		font-style: normal;
+		font-variant: normal;
+		text-rendering: auto;
+		line-height: 1;
+		text-transform: none !important;
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 400;
+	}
+
+	.icon:before {
+		line-height: inherit;
+		font-size: 1.25em;
+	}
+
+	.icon > .label {
+		display: none;
+	}
+
+	.icon.solid:before {
+		font-weight: 900;
+	}
+
+	.icon.brands:before {
+		font-family: 'Font Awesome 5 Brands';
+	}
+
+	.icon.circled {
+		position: relative;
+		display: inline-block;
+		background: #2b252c;
+		color: #fff;
+		border-radius: 100%;
+		width: 3em;
+		height: 3em;
+		line-height: 3em;
+		text-align: center;
+		font-size: 1.25em;
+	}
+
+		header .icon.circled {
+			margin: 0 0 2em 0;
+		}
+
 
 /* Wrapper */ 
 
