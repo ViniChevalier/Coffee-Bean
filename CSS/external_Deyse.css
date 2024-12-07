@@ -2418,3 +2418,9 @@ button,
   .coffee-section .image.fit:hover .caption {
     opacity: 1; /* Fade in caption on hover */
   }
+  #successMessage {
+		display: none; /* Hidden by default */
+		color: green;
+		margin-top: 10px;
+		text-align: center; /* Center align for better visibility on small screens */
+}
