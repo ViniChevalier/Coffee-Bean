@@ -646,6 +646,7 @@ section, summary, time, mark, audio, video {
 
 		#footer h3{
 			color: #fff;
+			padding: 1em;
 		}
 
 		#footer .contact {

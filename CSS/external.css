@@ -904,6 +904,8 @@ ul.menu {
 
 	#footer h3{
 		color: #fff;
+		padding: 1em;
+
 	}
 
 	#footer .contact {
@@ -2041,7 +2043,5 @@ ul.menu {
 	border: none;
 	width: 100%;
 	height: auto;
-
-	
-		
+}
 	}
