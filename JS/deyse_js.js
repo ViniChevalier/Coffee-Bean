@@ -1,18 +1,23 @@
 
-function validateEmail() {
-  const email = document.getElementById("email").value;
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const errorMsg = document.getElementById("emailError");
-
-  if (!emailPattern.test(email)) {
-    errorMsg.textContent = "Please enter a valid email address.";
-    return false;
-  } else {
-    errorMsg.textContent = "Sorry! try again later.";
-    return true;
-  }
-}
-
 function validateForm() {
-  return validateEmail();
+  // Perform any custom validation here
+  const email = document.getElementById('email').value;
+  const emailError = document.getElementById('emailError');
+  
+  // Example: Validate email contains "@" symbol
+  if (!email.includes('@')) {
+      emailError.textContent = 'Please enter a valid email address.';
+      return false; // Prevent form submission
+  } else {
+      emailError.textContent = ''; // Clear any previous error
+  }
+  
+  // If validation passes, show the success message
+  document.getElementById('successMessage').style.display = 'block';
+  
+  // Optional: Clear the form
+  document.querySelector('form').reset();
+  
+  return false; // Prevent actual form submission to allow the message display
 }
+

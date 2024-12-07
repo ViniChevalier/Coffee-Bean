@@ -45,39 +45,38 @@
 			</header>
 			<!-- Main -->
 				<div class="wrapper style1">
-
-					<div class="container">
-					
+					<div class="container">					
 						<form onsubmit="return validateForm()">
-							 <div class="form-group">
-								 <label for="name">Name:</label>
-								 <input type="text" class="form-control" id="name" name="name" required>
-							 </div>
+							<div class="form-group">
+									<label for="name">Name:</label>
+									<input type="text" class="form-control" id="name" name="name" required>
+							</div>
 							<br>
-							 <div class="form-group">
-								 <label for="email">Email:</label>
-								 <input type="email" class="form-control" id="email" name="email" required>
-								 <small id="emailError" class="form-text text-danger"></small>
-							 </div>
-							 <br>
-							 <div class="form-group">
-								 <label for="subject">Subject:</label>
-								 <select class="form-control" id="subject" name="subject">
-							 <option value="select">Select Option</option>
-									 <option value="Location">Our Boutiques Location</option>
-									 <option value="product-query">Query About Product</option>
-									 <option value="product-query">Buy Online</option>
-									 <option value="other">Other</option>
-								 </select>
-							 </div>
-							 	<br>
-							 <div class="form-group">
-								 <label for="Message"> Message:</label>
-								 <textarea id="Message" name="Message" rows= "5" cols= "33"> </textarea>
-							 </div>  
-							 	<br>
-							 <button type="submit" class="btn btn-primary">Submit</button>
-						 </form>
+							<div class="form-group">
+									<label for="email">Email:</label>
+									<input type="email" class="form-control" id="email" name="email" required>
+									<small id="emailError" class="form-text text-danger"></small>
+							</div>
+							<br>
+							<div class="form-group">
+									<label for="subject">Subject:</label>
+									<select class="form-control" id="subject" name="subject">
+											<option value="select">Select Option</option>
+											<option value="Location">Our Boutiques Location</option>
+											<option value="product-query">Query About Product</option>
+											<option value="buy-online">Buy Online</option>
+											<option value="other">Other</option>
+									</select>
+							</div>
+							<br>
+							<div class="form-group">
+									<label for="Message"> Message:</label>
+									<textarea id="Message" name="Message" rows="5" cols="33"></textarea>
+							</div>
+							<br>
+							<button type="submit" class="btn btn-primary">Submit</button>
+					</form>				
+					<p id="successMessage">Your message has been sent successfully. We will contact you soon.</p>
 					</div>
 				</div>
 			<!-- Footer -->
