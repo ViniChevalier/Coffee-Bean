@@ -655,12 +655,12 @@ section, summary, time, mark, audio, video {
 		position: relative;
 		overflow: hidden;
 		padding: 6em 0 6em 0;
-		background: rgba(157, 113, 80, 0.75);
+		background:  #a0522d;
 		color: #fff;
 	}
 
 		#footer .icon.circled {
-			background: rgba(214, 155, 109, 0.656);
+			background: #63311a;
 			color: rgba(157, 113, 80, 0.17);
 		}
 
@@ -787,6 +787,7 @@ section, summary, time, mark, audio, video {
 .icon {
 	text-decoration: none;
 	text-decoration: none;
+	background: #2b150b;
 }
 
 	.icon:before {
@@ -822,8 +823,8 @@ section, summary, time, mark, audio, video {
 	.icon.circled {
 		position: relative;
 		display: inline-block;
-		background: #2b252c;
-		color: #fff;
+		background: #2b150b;
+		color: #2b150b;
 		border-radius: 100%;
 		width: 3em;
 		height: 3em;
