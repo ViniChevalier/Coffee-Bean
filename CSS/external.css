@@ -171,6 +171,35 @@ section, video {
 		color: rgba(128, 128, 128, 0.75);
 		font-size: 0.8em;
 	}
+	/*open hours */ 	
+	.timetables {
+		list-style-type: none;
+		padding: 0;
+	}
+		  
+	/* represents a day of the week with it's opening hours*/
+	.time li {
+		padding: 10px;
+		border: 1px solid #ccc;
+		margin-bottom: 5px;
+		font-size: 1rem;
+	}
+	
+	/*controls open hours */
+	.time .today {
+		background-color: #1275cb;
+		font-weight: bold;
+	}
+		
+	.status-open {
+		color: green;
+		font-weight: bold;
+	}
+		
+	.status-closed {
+		color: red;
+		font-weight: bold;
+	}
 
 /* Container */
 
@@ -875,6 +904,8 @@ ul.menu {
 
 	#footer h3{
 		color: #fff;
+		padding: 1em;
+
 	}
 
 	#footer .contact {
@@ -1968,7 +1999,8 @@ ul.menu {
 		
 								.row.gtr-200.gtr-uniform > * {
 									padding-top: 40px;
-								} 
+								}
+
 		/*open hours */ 	
 		.timetables {
 			list-style-type: none;
@@ -1997,4 +2029,19 @@ ul.menu {
 			color: red;
 			font-weight: bold;
 		}
+
+	/* Video */
+
+.video-container {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.video-container video {
+	display: block;
+	border: none;
+	width: 100%;
+	height: auto;
+}
 	}

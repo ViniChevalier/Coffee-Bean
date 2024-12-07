@@ -382,6 +382,7 @@ section, summary, time, mark, audio, video {
 		display: inline-block;
 		border: 0;
 		outline: 0;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 	}
 
 	.image img {
@@ -629,6 +630,25 @@ section, summary, time, mark, audio, video {
 			padding-top: 2em;
 		}
 
+		#main img.image.featured {
+			width: 100%; 
+			max-width: auto;
+			height: auto; 
+			margin: 20px auto;
+			display: block; 
+		}
+
+		#main h2 {
+			font-size: 2rem;
+			color: #4b2e1e;
+			text-align: center;
+			margin-top: 20px;
+			text-transform: uppercase; 
+			letter-spacing: 1.5px; 
+			border-bottom: 2px solid #a0522d; 
+			padding-bottom: 5px; 
+		}
+
 /* Footer */
 
 	#footer {
@@ -646,6 +666,7 @@ section, summary, time, mark, audio, video {
 
 		#footer h3{
 			color: #fff;
+			padding: 1em;
 		}
 
 		#footer .contact {
