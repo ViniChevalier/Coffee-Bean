@@ -651,39 +651,45 @@ section, summary, time, mark, audio, video {
 
 /* Footer */
 
-	#footer {
-		position: relative;
-		overflow: hidden;
-		padding: 6em 0 6em 0;
-		background:  #a0522d;
-		color: #fff;
+#footer {
+	position: relative;
+	overflow: hidden;
+	padding: 6em 0 6em 0;
+	background: #2b252c;
+	color: #fff;
+}
+
+	#footer .icon.circled {
+		background: #fff;
+		color: #2b252c;
 	}
 
-		#footer .icon.circled {
-			background: #63311a;
-			color: rgba(157, 113, 80, 0.17);
-		}
+	#footer header {
+		text-align: center;
+		cursor: default;
+	}
 
-		#footer h3{
-			color: #fff;
-			padding: 1em;
-		}
+	#footer h3{
+		color: #fff;
+		padding: 1em;
 
-		#footer .contact {
+	}
+
+	#footer .contact {
+		text-align: center;
+	}
+
+		#footer .contact p {
 			text-align: center;
+			margin: 0 0 3em 0;
 		}
 
-			#footer .contact p {
-				text-align: center;
-				margin: 0 0 3em 0;
-			}
-
-		#footer .copyright {
-			text-align: center;
-			color: #fff;
-			font-size: 0.8em;
-			cursor: default;
-		}
+	#footer .copyright {
+		text-align: center;
+		color: rgba(128, 128, 128, 0.75);
+		font-size: 0.8em;
+		cursor: default;
+	}
 
 
 /* Carousel */

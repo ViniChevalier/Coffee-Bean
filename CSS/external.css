@@ -848,39 +848,61 @@ ul.menu {
 
 /* Coffee */ 
 
-.product-card {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+#coffeeApp {
+    padding: 2rem;
 }
-	
-	.product-card .image {
-		width: 100%;
-		height: auto; 
-		overflow: hidden;
-		margin-bottom: 10px;
-	}
 
-	#coffeeApp .product-card header h3 {
-		margin-bottom: 5px;
-		font-size: 1.25em;
-		text-align: center;
-	}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-	#coffeeApp .product-card h5 {
-		font-size: 1.5em;
-	}
-		
-	#coffeeApp .product-card .price {
-		margin-top: 0;
-		margin-bottom: 5px;
-	}
-		
-	#coffeeApp .product-card p {
-		margin-top: 5px;
-		margin-bottom: 10px;
-		line-height: 1.3;
-	}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-img-top {
+    width: 100%; 
+    height: 250px
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+
+.card-text {
+    font-size: 1.25rem;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.card h6 {
+    font-size: 1.50rem;
+    font-weight: bold;
+    color: #007b5e;
+	text-align: left;
+}
 
 /* Footer */
 
