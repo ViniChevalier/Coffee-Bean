@@ -1,22 +1,25 @@
-
 function validateForm() {
-  // Perform any custom validation here
-  const email = document.getElementById('email').value;
+  const email = document.getElementById('email').value.trim(); // Trim whitespace
   const emailError = document.getElementById('emailError');
+  const successMessage = document.getElementById('successMessage');
   
-  // Example: Validate email contains "@" symbol
-  if (!email.includes('@')) {
-      emailError.textContent = 'Please enter a valid email address.';
-      return false; // Prevent form submission
-  } else {
-      emailError.textContent = ''; // Clear any previous error
+  // Reset previous messages
+  emailError.textContent = '';
+  successMessage.style.display = 'none';
+
+  // Validate email contains "@" and a domain
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    emailError.textContent = 'Please enter a valid email address.';
+    return false; // Prevent form submission
   }
   
-  // If validation passes, show the success message
-  document.getElementById('successMessage').style.display = 'block';
-  
+  // Show success message
+  successMessage.textContent = 'Your message has been sent successfully. We will contact you soon.';
+  successMessage.style.display = 'block';
+
   // Optional: Clear the form
   document.querySelector('form').reset();
-  
-  return false; // Prevent actual form submission to allow the message display
+
+  return false; // Prevent actual form submission
 }
