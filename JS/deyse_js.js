@@ -20,4 +20,3 @@ function validateForm() {
   
   return false; // Prevent actual form submission to allow the message display
 }
-
